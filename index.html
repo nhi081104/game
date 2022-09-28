@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            text-align: center;
+            width:100px;
+            height:100px;
+            background-color:rosybrown;
+            position:relative;
+        }
+        #khong{
+            animation-name: game;/*dat ten animation*/
+            animation-duration: 4s;/*thoi gian cua moi vong chay*/
+            animation-iteration-count: infinite;/*chay vo cuc khong dung*/
+        }
+        @keyframes game{
+            0% {background-color: aquamarine;left:0px;top:0px;}
+            25% {background-color:palevioletred;left:300px;top:0px;}
+            50% {background-color:aqua;left:300px;top:300px;}
+            75% {background-color:rosybrown;left:0px;top:300px;}
+            100% {background-color:mediumslateblue;left:0px;top:0px;}
+}
+
+    </style>
+</head>
+<body>
+    <h1>Bạn thấy mình có đẹp không ?</h1>
+    <div>
+        <button>Có</button>
+        <button id="khong" onclick="ok()">Không</button>
+
+    </div>
+    <script>
+        function ok(){
+            alert("Khó vậy cũng làm được nữa hả! chúc mừng nha");
+        }
+    </script>
+</body>
+</html>
